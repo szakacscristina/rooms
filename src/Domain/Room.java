@@ -21,13 +21,14 @@ public class Room {
                 '}';
     }
 
-    public Room (int id, int numberOfpersons, int roomnumber, int days){
+    public Room(int id, int numberOfpersons, int roomnumber, int days) {
         this.id = id;
         this.numberOfpersons = numberOfpersons;
         this.roomnumber = roomnumber;
         this.days = days;
         leftroom = false; //nu este necesar
     }
+
     public Room(int id, int numberOfpersons, int roomnumber, int days, boolean leftroom, String feedback, double rating) {
         this.id = id;
         this.numberOfpersons = numberOfpersons;
@@ -95,7 +96,9 @@ public class Room {
     }
 
     public boolean isEmpty() {
+        return false;
     }
+}
 
 
 
