@@ -94,6 +94,9 @@ public class Room {
         this.rating = rating;
     }
 
+    public boolean isEmpty() {
+    }
+
 
 
 

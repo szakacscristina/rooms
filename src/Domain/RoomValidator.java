@@ -13,10 +13,10 @@ public class RoomValidator {
                 throw new RuntimeException("The number of days cannot be 0 or negative!");
             }
 
-            if (roomnumber.isLeftService() && car.getPrice() <= 0) {
-                throw new RuntimeException("Price must be positive!");
+            if (room.isEmpty() && (room.getRating() <= 5)) {
+                throw new RuntimeException("Rating must be positive!");
             }
         }
     }
 
-}
+
